@@ -1,0 +1,9 @@
+<li>
+  <%= page.path %>
+
+  <% unless Page.children.empty? %>
+    <ul>
+      <%= render Page.children %>
+    </ul>
+  <% end %>
+</li>
